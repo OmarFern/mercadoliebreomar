@@ -1,0 +1,510 @@
+*{box-sizing: border-box;
+  margin: 0px; 
+  padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    width: 100vw;
+    height: 100vh
+
+}
+
+
+
+/*****************video celular********/
+.main-header-top-bar{
+    border:dotted 2px red;
+    display:flex;/*los acomoda a rerecha*/
+    justify-content:space-between;
+    flex-wrap: wrap;/* acomoda sin perder su area*/
+
+}  
+
+.logo{max-width: 30vw;} 
+
+.copy-header{
+    max-width:30vw ;
+    text-align:center;
+} 
+
+
+/* logo*/
+header div.logo{ width: 30vw;   }   
+  /*body { background: rgb(47, 0, 255); }*/
+
+/*menu*/
+nav{display: inline;}
+.main-navbar{
+    border: dotted 2px red;/* me  deja ver lo dond estoy*/
+    display: flex;
+    justify-content:space-between;
+}
+/* indico que los elementos hijos ul pueden tener flex*/
+.main-navbar ul{
+    display: flex;}
+/* le indico que tiene que tener una separacion de 5px*/    
+.main-navbar li{
+       margin: 0 5px;}    
+
+
+/****************video******************/
+/*titular*/
+h3{
+    font-size: 24px;
+}
+/*cuerpo de texto*/
+span{
+    font-size: 12px;
+}
+
+div.top-header{
+    width: 50%;
+    padding: 5%;
+}
+/*video*/
+
+.main-header{
+    background-color: #EAC926;
+    padding:20px; /*espacio en costados*/
+    
+}
+/*logo del header*/
+.logo{width: 40vw;  }
+.copy-header{font-weight: 400;
+    text-align: center;
+}
+
+/***************/
+
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width:30vw;/*ancho*/
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+/*header div*/
+.top-header p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* oculto el menu */
+.main-navbar{display: none;}
+.main-navbar ul {
+     list-style: none;
+     margin:0;
+     padding: 0;           
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding:5px 0;
+    font-size: 17px;
+}
+
+
+
+
+div.main-article i{
+    text-align: center;
+}
+
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;/*relleno*/
+    width: 40px;
+    display: block;/*elemento de bloque*/
+    margin:auto;   /* me deja centralo */
+   
+    
+}
+/* auto derecha*/
+div.main-article i{
+    display: block ;
+    font-size: 16 px ;
+    padding: 5 px ;
+    width: 30 px ;
+    height: 30 px ;
+    border: 1 px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    position: absolute ;
+    right: 20 px ;
+    top: -15 px ; 
+}
+div.main-article {
+    display:column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+
+
+/******ver*********/
+
+
+
+article div.main-article{
+    width: 90vw;/* toma el tamaño del real de la pantalla*/
+   
+}
+/*tamaño precio*/
+/*selector de clase*/
+.price{font-size: 18px;}
+/*tamaño descuento descripciones*/
+.discount,.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+/*selector desendente*/
+.description ,h3 { color: #666;}
+
+section.banner img{ width: 100%;}
+
+main{
+    width: 100%;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+    
+
+}
+
+/*celector desendente en footer busca los i */
+footer i{
+         color: #0044AA; /*colo del icono*/
+         font-size: 30px; /*tamaño de icono*/ }
+ .main-footer{
+            border: dotted 2px rgb(179, 25, 25);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }         
+
+@media (min-width: 361px){
+   /* body { background: red;}*/
+    div.burger-menu i{display: none;/* oculta*/}
+    nav{display: inline;}
+    .main-navbar{display: inline;}
+
+/*****video*****************/    
+
+
+
+.main-header-top-bar{
+    border:dotted 2px red;
+    display:flex;/*los acomoda a rerecha*/
+    justify-content:space-between;
+    flex-wrap: wrap;/* acomoda sin perder su area*/
+
+}  
+
+.logo{max-width: 30vw;} 
+
+.copy-header{
+    max-width:280px ;
+    text-align:right;
+} 
+
+
+/* logo*/
+header div.logo{ width: 30vw;   }   
+  /*body { background: rgb(47, 0, 255); }*/
+
+/*menu*/
+nav{display: inline;}
+.main-navbar{
+    border: dotted 2px red;/* me  deja ver lo dond estoy*/
+    display: flex;
+    justify-content:space-between;
+}
+/* indico que los elementos hijos ul pueden tener flex*/
+.main-navbar ul{
+    display: flex;}
+/* le indico que tiene que tener una separacion de 5px*/    
+.main-navbar li{
+       margin: 0 5px;}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************contenedor tablet****************************/    
+  
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:unset;
+    align-content:flex-start;
+    height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+    padding:10px;
+    
+   
+  }
+  /* como tengo 4 fotos y el es 100% lo divido en 4 entondes
+     100%/2=50% es mi medida para wl width*/
+  .item-0{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+  /*  height:auto;*/
+    width:50%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+ 
+  }
+        
+  .item-1{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+  /*  height:auto;*/
+    width:50%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+        
+  .item-2{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+   /* height:auto;*/
+    width:50%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+        
+  .item-3{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    /*height:auto;*/
+    width:50%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+
+
+/*************************************/        
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+@media (min-width: 768px){
+.main-header-top-bar{
+    border:dotted 2px red;
+    display:flex;/*los acomoda a rerecha*/
+    justify-content:space-between;
+
+}  
+
+.logo{max-width: 30vw;} 
+
+.copy-header{
+    max-width:280px ;
+    text-align:right;
+} 
+
+
+/* logo*/
+header div.logo{ width: 30vw;   }   
+  /*body { background: rgb(47, 0, 255); }*/
+
+/*menu*/
+nav{display: inline;}
+.main-navbar{
+    border: dotted 2px red;/* me  deja ver lo dond estoy*/
+    display: flex;
+    justify-content:space-between;
+}
+/* indico que los elementos hijos ul pueden tener flex*/
+.main-navbar ul{
+    display: flex;}
+/* le indico que tiene que tener una separacion de 5px*/    
+.main-navbar li{
+       margin: 0 5px;}    
+
+
+/***container pc ****/
+div.burger-menu i{display: none;/* oculta*/}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:unset;
+   /* align-content:flex-start;*/
+    width:100vw; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+    margin:auto;
+    
+    
+   
+  }
+  /* como tengo 4 fotos y el es 100% lo divido en 4 entondes
+     100%/4=25% es mi medida para wl width*/
+  .item-0{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:25%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+        
+  .item-1{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:25%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+        
+  .item-2{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:25%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+        
+  .item-3{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:25%;
+    box-shadow: 10px 10px 5px 5px rgb(100, 97, 97);
+  }
+
+
+        }    
+
+/************css login formulario******************/  
+
+.register-form{
+    border: dotted 2px rgb(28, 61, 48);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    height:40vh;
+}
+.register-form div{ 
+    display:inline-block;
+    padding:15px 0;
+    font-size:12px;
+    
+
+}
+.boton-login{
+    background-color: white;
+    width: 30vw;
+    border-radius: 5px;
+}
+.boton-enviar{
+    background-color:rgb(52, 13, 194);
+    width: 30vw;
+    color:white;
+    border-radius: 5px;
+}
+/**********************css register formulario******************************/
+.register-form-register{
+    border: dotted 2px rgb(206, 64, 21);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+
+
+}
+
+.register-form-register div{ 
+    display:inline-block;
+    padding:10px 0;
+    font-size:20px;
+    
+
+}
+
+.boton-login-register{
+    background-color: white;
+    width: 30vw;
+    border-radius: 5px;
+}
+.boton-enviar{
+    background-color:rgb(52, 13, 194);
+    width: 30vw;
+    color:white;
+    border-radius: 5px;
+}
