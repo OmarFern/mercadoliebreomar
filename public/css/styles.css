@@ -15,6 +15,7 @@ body{
 
 /*****************video celular********/
 .main-header-top-bar{
+  
     /* border:dotted 2px red; */
     display:flex;/*los acomoda a rerecha*/
     justify-content:space-between;
@@ -25,7 +26,7 @@ body{
 .logo{max-width: 30vw;} 
 
 .copy-header{
-    max-width:30vw ;
+    /* max-width:35vw ; */
     text-align:center;
 } 
 
@@ -222,6 +223,11 @@ main section article i,
     
 
 }
+footer{
+    font-size: 66px;
+   line-height: 1.5;  
+
+}
 
 /*celector desendente en footer busca los i */
 footer i{
@@ -230,7 +236,7 @@ footer i{
  .main-footer{
             /* border: dotted 2px rgb(179, 25, 25); */
             display: flex;
-            flex-direction: column;
+             flex-direction: column; 
             text-align: center;
         }         
 
@@ -241,12 +247,17 @@ footer i{
     .main-navbar{display: inline;}
 
 /*****video*****************/    
-
+.main-footer{
+    /* border: dotted 2px rgb(179, 25, 25); */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}    
 
 
 .main-header-top-bar{
     /* border:dotted 2px red; */
-    display:flex;/*los acomoda a rerecha*/
+    display:flex;
     justify-content:space-between;
     flex-wrap: wrap;/* acomoda sin perder su area*/
 
@@ -356,6 +367,7 @@ nav{display: inline;}
 
 
 .main-header-top-bar{
+
     /* border:dotted 2px red; */
     display:flex;/*los acomoda a rerecha*/
     justify-content:space-between;
@@ -377,6 +389,7 @@ h2.copy-header{
 .logo{max-width: 200px;} 
 
 .copy-header{
+    font-size: 17px;
     max-width:350px ;
     text-align:right;
 } 
