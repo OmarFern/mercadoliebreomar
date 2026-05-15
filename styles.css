@@ -369,8 +369,9 @@ nav{display: inline;}
 .main-header-top-bar{
 
     /* border:dotted 2px red; */
-    display:flex;/*los acomoda a rerecha*/
+    display:flex;
     justify-content:space-between;
+    flex-wrap: wrap;/* acomoda sin perder su area*/
 
 }  
 span.submit{
@@ -414,8 +415,19 @@ nav{display: inline;}
        margin: 0 5px;}    
 
 
-/***container pc ****/
-div.burger-menu i{display: none;/* oculta*/}
+
+
+
+
+
+
+
+
+
+
+
+/**********************contenedor tablet****************************/    
+  
 .container{
     display:flex;
     flex-direction:row;
@@ -528,4 +540,60 @@ div.burger-menu i{display: none;/* oculta*/}
     width: 30vw;
     color:white;
     border-radius: 5px;
+}
+
+/* Responsive adjustments */
+
+/* General styles for small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .main-header-top-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 50vw;
+  }
+
+  .main-navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-navbar li {
+    margin: 10px 0;
+  }
+
+  header .form .input {
+    width: 80%;
+  }
+
+  header .form .submit {
+    width: auto;
+  }
+}
+
+/* Styles for very small screens */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 10px;
+  }
+
+  .copy-header {
+    font-size: 14px;
+  }
+
+  .burger-menu i {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+  }
 }

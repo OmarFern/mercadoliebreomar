@@ -156,4 +156,46 @@ body{
   
 
   }
+  
+  /* Responsive adjustments for smaller screens */
+
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    main section .products {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main section article {
+      max-width: 90%;
+      margin: 10px auto;
+    }
+
+    main section article img {
+      max-width: 100%;
+    }
+
+    main section article .main-description {
+      padding: 10px;
+    }
+
+    main section article .main-description .price-discount {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    main section article .main-description .price-discount .price {
+      font-size: small;
+    }
+
+    main section article .main-description .price-discount .discount {
+      font-size: smaller;
+    }
   }
